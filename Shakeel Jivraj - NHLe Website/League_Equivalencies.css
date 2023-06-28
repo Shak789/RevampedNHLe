@@ -1,0 +1,93 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 700px;
+    margin-top: 50px;
+    overflow: hidden; /* Clear the float */
+}
+
+li {
+    float: left;
+}
+  
+a {
+    display: block;
+    padding: 8px;
+    color: white;
+    
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold; /* Makes the text bold */
+    background-color: black;
+    text-decoration: none; /* Removes the underline */
+}
+
+li a:hover {
+    text-shadow: 0px 0px 5.5px lightgrey;
+}
+
+div.image img {
+    position: absolute;
+    height: 100px;
+    width: 200px; 
+    transform: translateY(-515px) translateX(39.5px);
+  
+}
+
+div.content #my-paragraph {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    font-family: sans-serif;
+    line-height: 1; 
+    margin-left: 30px;
+    transform: translateY(60px) translateX(20px); /* Combine translations */
+}
+
+div.content #intro {
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 1.5; 
+    transform: translateY(-5px);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+div.content button {
+    position: absolute;
+    background-color: red; 
+    font-family: sans-serif;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    background-size: contain;
+    transform: translateY(-50px) translateX(40px);
+    box-shadow: 0 8px 16px 0 white(0,0,0,0.2);
+
+}
+
+  
+div.content button:hover {
+    background-color: #CC0000; /* Green */
+    color: white;
+}
