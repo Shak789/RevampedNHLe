@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Player Cards</title>
+    <link rel = "stylesheet" href = "Player_Cards.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="Front_Page" >Home</a></li>
+        <li><a href="Write_up">Write-up</a></li>
+        <li><a href="League_Equivalencies">League Equivalencies</a></li>
+        <li><a href="Player_Cards">Player Cards</a></li>
+        <li><a href="About_Me">About Me</a></li>
+    </ul>
+
+    <div class="content">
+        <p id="my-paragraph">
+            Prospect Profiles: Player Cards 
+        </p>
+    
+        <p id="intro">
+            Explore an extensive collection of player cards showcasing 300+ forwards eligible for the 2023 NHL draft. Click the link below to access the cards in a Google Sheet. To view all the cards, make a copy by going to <br> File > Make a copy in the Google Sheet. Scroll down for more information about reading the cards.
+        </p>
+
+        <div class = "image">
+            <a href = "Front_Page">
+                <img src = "Nhle logo new.png" height = "150" width = "300">
+            </a>
+        </div>
+    
+        <a href = "https://docs.google.com/spreadsheets/d/1iLVAsKMakEQt1VR2JNTTKEJGNRjCl8ZQWl6wHizdGpE/edit?usp=sharing">
+            <button type="button"> View Player Cards </button>
+            
+        </a>
+    
+    </div>
+
+    <a href = "#section2">
+        <div class="arrow1 bounce1">
+        </div>
+    
+    </a>
+
+    <div class="main reveal" id="section2">
+        <h2>Section 2</h2>
+
+        <p id="header1">
+            Reading the Cards
+        </p>
+
+        <div class = "image">
+            <img src = "Bedard_Card.png">
+        </div>
+
+        <p id ="info">
+            1. Team and League: Player's team and league during the <br> 2022-2023 season.
+            <br> <br> 2. Age: Player's current age. 
+            <br> <br> 3. NHLe: The value of the player's points relative to the NHL.
+            <br> <br> 4. Potential: Projects a player's point totals. More information <br> can be found on the spreadsheet.
+            <br> <br> 5. Rank: Player's NHLe ranked amongst other prospects. This <br> is adjusted for age, so if two players have the same NHLe, the<br> younger player will be ranked higher. </b> 
+
+        </p>
+
+
+    </div>
+
+    <script>
+
+        function reveal() {
+          var reveals = document.querySelectorAll(".reveal");
+          for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+              reveals[i].classList.add("active");
+            } else {
+              reveals[i].classList.remove("active");
+            }
+          }
+        }  
+        
+        window.addEventListener("scroll", reveal);
+                
+            </script>
+    
+   
+
+<body>
+
+<html>
